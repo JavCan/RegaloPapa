@@ -1,0 +1,65 @@
+.locked-photo-container {
+  position: relative;
+  width: 300px; /* Ajusta según el tamaño deseado */
+  height: 200px; /* Ajusta según el tamaño deseado */
+  margin: 20px auto; /* Centrado y con margen */
+  border-radius: 8px;
+  overflow: hidden; /* Para que el overlay no se salga si la imagen es más grande */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.family-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para que la imagen cubra el contenedor sin deformarse */
+  display: block;
+  transition: opacity 0.8s ease-in-out; /* Transición para la foto en sí (opcional) */
+}
+
+.lock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Capa semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  visibility: visible;
+  border-radius: 8px; /* Para que coincida con el contenedor */
+}
+
+.locked-photo-container.unlocked .lock-overlay {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Opcional: si quieres que la foto también tenga un fade-in sutil al desbloquearse */
+/* .locked-photo-container.unlocked .family-photo {
+  opacity: 1;
+} 
+.locked-photo-container .family-photo {
+  opacity: 0.8; // Ligeramente opaca cuando está bloqueada
+} */
+
+.lock-icon {
+  font-size: 3em; /* Tamaño del icono de candado */
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .locked-photo-container {
+    width: 90%; /* Más ancho en móviles */
+    max-width: 280px;
+    height: auto; /* Altura automática basada en el aspect ratio de la imagen */
+    aspect-ratio: 3 / 2; /* O el aspect ratio de tu imagen */
+  }
+
+  .lock-icon {
+    font-size: 2.5em;
+  }
+}

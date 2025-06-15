@@ -40,3 +40,69 @@
 .read-the-docs {
   color: #888;
 }
+
+.game-status-message {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333; /* O el color que prefieras */
+}
+
+.new-game-button-app {
+  background-color: #007bff; /* Un color diferente para distinguirlo */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.new-game-button-app:hover {
+  background-color: #0056b3;
+}
+
+.status-message {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8d7da; /* Un rojo claro para indicar pérdida o error */
+  color: #721c24; /* Texto oscuro para contraste */
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.play-again-button, .start-game-button {
+  background-color: #28a745; /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.play-again-button:hover, .start-game-button:hover {
+  background-color: #218838; /* Verde más oscuro al pasar el ratón */
+}
+
+.congratulations-message {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #d4edda; /* Un verde claro para indicar éxito */
+  color: #155724; /* Texto oscuro para contraste */
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.congratulations-message h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}

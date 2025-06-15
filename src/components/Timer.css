@@ -1,0 +1,21 @@
+.timer-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #4CAF50; /* Un verde bonito, puedes cambiarlo */
+  border-radius: 8px;
+  background-color: #f0f0f0; /* Un fondo claro */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timer-text {
+  font-size: 1.5em; /* Tamaño de fuente más grande */
+  color: #333; /* Color de texto oscuro para contraste */
+  font-weight: bold;
+  margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+
+/* Puedes añadir estilos para cuando el tiempo se está acabando, por ejemplo */
+.timer-text.low-time {
+  color: #D32F2F; /* Rojo para indicar poco tiempo */
+}

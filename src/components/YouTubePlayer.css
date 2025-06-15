@@ -1,0 +1,14 @@
+.youtube-player-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Puedes añadir más estilos si quieres que el reproductor sea responsive */
+@media (max-width: 768px) {
+  .youtube-player-container iframe {
+    width: 90%;
+    height: auto; /* Mantener la proporción del video */
+  }
+}
