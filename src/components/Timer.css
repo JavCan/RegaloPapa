@@ -39,3 +39,10 @@
   color: #ffffff; /* Mantenemos el color blanco */
   animation: pulse 1s infinite; /* Aplicamos la animación de pulso */
 }
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .timer-container {
+    width: 90vw; /* Ajustamos el ancho para pantallas más pequeñas */
+  }
+}
