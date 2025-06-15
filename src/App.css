@@ -9,10 +9,12 @@
   backdrop-filter: blur(5px); /* Efecto de desenfoque tipo glass */
   -webkit-backdrop-filter: blur(5px); /* Para compatibilidad con Safari */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Borde ligero para definir la forma */
+  height: 80%;
 }
 
 .gif {
   border-radius: 8px;
+  width: 70%;
 }
 
 p.unlock-instructions{
@@ -91,6 +93,7 @@ p.unlock-instructions{
   color: #721c24; /* Texto oscuro para contraste */
   border: 1px solid #f5c6cb;
   border-radius: 5px;
+  height: 60vh;
 }
 
 .play-again-button, .start-game-button {
@@ -101,7 +104,6 @@ p.unlock-instructions{
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
-  margin-top: 10px;
   transition: background-color 0.3s ease;
 }
 

@@ -43,6 +43,6 @@
 /* Responsive adjustments */
 @media (max-width: 480px) {
   .timer-container {
-    width: 90vw; /* Ajustamos el ancho para pantallas más pequeñas */
+    width: 90%; /* Ajustamos el ancho para pantallas más pequeñas */
   }
 }
