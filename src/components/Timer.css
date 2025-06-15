@@ -1,21 +1,41 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .timer-container {
   margin-top: 20px;
-  padding: 10px;
-  border: 2px solid #4CAF50; /* Un verde bonito, puedes cambiarlo */
-  border-radius: 8px;
-  background-color: #f0f0f0; /* Un fondo claro */
+  width: 25em;
+  padding: 12px 20px;
+  border: none; /* Eliminamos el borde anterior */
+  border-radius: 12px; /* Bordes más redondeados */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Degradado moderno */
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  transition: all 0.3s ease-in-out; /* Transición suave para hover (opcional) */
+  margin-left: auto; /* Centrar el contenedor */
+  margin-right: auto; /* Centrar el contenedor */
 }
 
 .timer-text {
-  font-size: 1.5em; /* Tamaño de fuente más grande */
-  color: #333; /* Color de texto oscuro para contraste */
-  font-weight: bold;
-  margin: 0; /* Elimina el margen por defecto del párrafo */
+  font-size: 1.8em; /* Un poco más grande */
+  color: #ffffff; /* Texto blanco para mejor contraste con el degradado */
+  font-weight: 500; /* Un peso de fuente medio */
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Sombra de texto sutil */
 }
 
-/* Puedes añadir estilos para cuando el tiempo se está acabando, por ejemplo */
 .timer-text.low-time {
-  color: #D32F2F; /* Rojo para indicar poco tiempo */
+  color: #ffffff; /* Mantenemos el color blanco */
+  animation: pulse 1s infinite; /* Aplicamos la animación de pulso */
 }

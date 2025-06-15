@@ -55,7 +55,9 @@ function App() {
 
       {gameLost && (
         <div className="status-message">
-          <h2>Échale ganas</h2>
+          <h2>Echale ganas</h2>
+          <img className='gif' src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bmsxdWgxZHBqeHNsMWZucjAxMHc3NHBuamg5eGN5dWFrdXd3MTBzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xTg8B1l93LXgcQgcta/giphy.gif" alt="Descripción del GIF"/>
+          <p></p>
           <button onClick={startGame} className="play-again-button">Jugar de Nuevo</button>
         </div>
       )}

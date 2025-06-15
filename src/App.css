@@ -11,6 +11,10 @@
   border: 1px solid rgba(255, 255, 255, 0.3); /* Borde ligero para definir la forma */
 }
 
+.gif {
+  border-radius: 8px;
+}
+
 p.unlock-instructions{
   font-size: 1.1em;
   font-weight: 400;
@@ -106,7 +110,6 @@ p.unlock-instructions{
 }
 
 .congratulations-message {
-  margin-top: 20px;
   padding: 20px;
   background-color: #d4edda; /* Un verde claro para indicar éxito */
   color: #155724; /* Texto oscuro para contraste */
