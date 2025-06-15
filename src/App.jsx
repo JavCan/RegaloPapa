@@ -9,6 +9,7 @@ import YouTubePlayer from './components/YouTubePlayer'; // Importa YouTubePlayer
 const INITIAL_TIME = 60; // 60 segundos para el juego
 const YOUTUBE_VIDEO_ID_PLACEHOLDER = 'dQw4w9WgXcQ'; // Placeholder (Rick Astley - Never Gonna Give You Up)
 const WIN_SOUND_PATH = '/sounds/win.mp3'; // Ruta al sonido de victoria
+const LOSE_SOUND_PATH = '/sounds/lose.mp3'; // Ruta al sonido de derrota
 
 function App() {
   const [gameWon, setGameWon] = useState(false);
@@ -28,6 +29,7 @@ function App() {
     if (!gameWon) {
       setGameLost(true);
       setGameStarted(false);
+      const loseSound = new Audio(LOSE_SOUND_PATH);
     }
   };
 
