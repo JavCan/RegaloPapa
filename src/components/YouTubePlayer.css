@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden; /* Añade esta línea */
+  position: absolute; /* Añade esta línea para que no ocupe espacio */
 }
 
 /* Puedes añadir más estilos si quieres que el reproductor sea responsive */

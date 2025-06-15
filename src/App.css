@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+p.unlock-instructions{
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #f8f8f8; /* O el color que prefieras */
+  margin-top: 0;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -102,7 +109,26 @@
   text-align: center;
 }
 
+.sub-message {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
+
 .congratulations-message h2 {
   font-size: 2em;
   margin-bottom: 15px;
+}
+
+.initial-state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.unlock-instructions {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
 }

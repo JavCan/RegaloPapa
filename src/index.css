@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: #0200249f;
+  background: linear-gradient(0, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.61) 35%, rgb(2, 187, 224) 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {

@@ -14,7 +14,7 @@ function Confetti({ isActive }) {
       decay: 0.94, // Cuánto se desaceleran las partículas
       startVelocity: 30, // Velocidad inicial
       particleCount: 150, // Cantidad de partículas
-      origin: { y: 0.6 } // Origen un poco más abajo de la parte superior
+      origin: { y: 0 } // Origen un poco más abajo de la parte superior
     };
 
     // Disparar varias ráfagas para un efecto más completo

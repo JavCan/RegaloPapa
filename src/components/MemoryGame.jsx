@@ -4,7 +4,7 @@ import './MemoryGame.css';
 // Importa las imágenes desde la carpeta public
 // Asegúrate de que las rutas sean correctas y que tengas 8 imágenes únicas.
 const cardImages = [
-  { "src": "/beis.png", matched: false },
+  { "src": "/beis.jpg", matched: false },
   { "src": "/billar.png", matched: false },
   { "src": "/ca.png", matched: false },
   { "src": "/cafe.jpg", matched: false },
@@ -109,7 +109,6 @@ function MemoryGame({ onGameWin, gameStarted, onGameStart }) { // Añadir gameSt
 
   return (
     <div className="memory-game">
-      <h2>Memorama del Día del Padre</h2>
       <p>Intentos: {turns}</p>
       {/* El botón ahora llama a handleNewGameClick */}
       <button onClick={handleNewGameClick} className="new-game-button">Nuevo Juego</button>

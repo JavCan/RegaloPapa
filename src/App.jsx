@@ -46,8 +46,9 @@ function App() {
 
       {gameWon && (
         <div className="congratulations-message">
-          <h2>¡Feliz Día, Papá! ❤️</h2>
+          <h2>¡Feliz Día Papá, te amo!</h2>
           <LockedPhoto isUnlocked={gameWon} />
+          <p className='sub-message'>Muchas gracias por todo, estoy orgulloso de ser tu hijo :)</p>
           <YouTubePlayer videoId={YOUTUBE_VIDEO_ID_PLACEHOLDER} isPlaying={gameWon} />
         </div>
       )}
@@ -60,7 +61,11 @@ function App() {
       )}
 
       {!gameStarted && !gameWon && !gameLost && (
-        <button onClick={startGame} className="start-game-button">Comenzar Juego</button>
+        <div className="initial-state-container">
+          <p className="unlock-instructions">Completa el memorama para revelar la foto</p>
+          <LockedPhoto isUnlocked={false} />
+          <button onClick={startGame} className="start-game-button">Comenzar Juego</button>
+        </div>
       )}
 
       {gameStarted && !gameWon && !gameLost && (
