@@ -1,8 +1,14 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 80vw;
+  margin: 2rem auto; /* Centrado con margen superior e inferior */
   padding: 2rem;
   text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* Color de fondo semitransparente */
+  border-radius: 16px; /* Bordes curveados */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque tipo glass */
+  -webkit-backdrop-filter: blur(5px); /* Para compatibilidad con Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde ligero para definir la forma */
 }
 
 p.unlock-instructions{
