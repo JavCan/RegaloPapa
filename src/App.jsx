@@ -55,7 +55,7 @@ function App() {
 
       {gameLost && (
         <div className="status-message">
-          <h2>¡Oh no! Se acabó el tiempo.</h2>
+          <h2>Échale ganas</h2>
           <button onClick={startGame} className="play-again-button">Jugar de Nuevo</button>
         </div>
       )}
