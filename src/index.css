@@ -29,13 +29,13 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin-top: 3em;
   padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   max-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 h1 {
