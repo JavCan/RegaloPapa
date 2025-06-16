@@ -51,7 +51,8 @@ function App() {
         <div className="congratulations-message">
           <h2>¡Feliz Día Papá, te amo!</h2>
           <LockedPhoto isUnlocked={gameWon} />
-          <p className='sub-message'>Muchas gracias por todo, estamos orgullosos de ser tu familia :) -ATTE Javi, Dani y tu esposa Doris</p>
+          <p className='sub-message'>Muchas gracias por todo, estamos orgullosos de ser tu familia :)</p>
+          <p className='sub-message'>-ATTE Javi, Dani y tu esposa Doris</p>
           <YouTubePlayer videoId={YOUTUBE_VIDEO_ID_PLACEHOLDER} isPlaying={gameWon} />
         </div>
       )}

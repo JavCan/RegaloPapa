@@ -143,3 +143,37 @@ p.unlock-instructions{
   margin-bottom: 15px;
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .status-message {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8d7da; /* Un rojo claro para indicar pérdida o error */
+    color: #721c24; /* Texto oscuro para contraste */
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    height: 70%;
+  }
+  .congratulations-message {
+    background-color: #d4edda; /* Un verde claro para indicar éxito */
+    color: #155724; /* Texto oscuro para contraste */
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    text-align: center;
+    height: 80%;
+    margin-top: 10px;
+  }
+  .sub-message {
+    font-size: .9em;
+    margin: .6em auto;
+  }
+  .congratulations-message h2 {
+    font-size: 1em;
+    margin-top: 0;
+  }
+  .gif {
+    border-radius: 8px;
+    width: 100%;
+    margin: 30px 0;
+  }
+}

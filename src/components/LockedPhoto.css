@@ -62,4 +62,14 @@
   .lock-icon {
     font-size: 2.5em;
   }
+  .locked-photo-container {
+    position: relative;
+    width: 90%; /* Ajusta según el tamaño deseado */
+    height: 70%; /* Ajusta según el tamaño deseado */
+    margin: 20px auto; /* Centrado y con margen */
+    border-radius: 8px;
+    overflow: hidden; /* Para que el overlay no se salga si la imagen es más grande */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
 }
