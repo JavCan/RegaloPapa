@@ -9,7 +9,7 @@
   backdrop-filter: blur(5px); /* Efecto de desenfoque tipo glass */
   -webkit-backdrop-filter: blur(5px); /* Para compatibilidad con Safari */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Borde ligero para definir la forma */
-  height: 80%;
+  height: 80vh;
 }
 
 .gif {
@@ -118,11 +118,12 @@ p.unlock-instructions{
   border: 1px solid #c3e6cb;
   border-radius: 8px;
   text-align: center;
+  height: 78%;
 }
 
 .sub-message {
   font-size: 1.2em;
-  margin-top: 1.5em;
+  margin-top: .8em;
 }
 
 .congratulations-message h2 {
@@ -135,6 +136,8 @@ p.unlock-instructions{
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  height: 90%;
+  width: 100%;
 }
 
 .unlock-instructions {

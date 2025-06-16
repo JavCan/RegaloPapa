@@ -1,7 +1,7 @@
 .locked-photo-container {
   position: relative;
-  width: 50vw; /* Ajusta según el tamaño deseado */
-  height: 50vh; /* Ajusta según el tamaño deseado */
+  width: 50%; /* Ajusta según el tamaño deseado */
+  height: 70%; /* Ajusta según el tamaño deseado */
   margin: 20px auto; /* Centrado y con margen */
   border-radius: 8px;
   overflow: hidden; /* Para que el overlay no se salga si la imagen es más grande */
