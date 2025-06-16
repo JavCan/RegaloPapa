@@ -91,7 +91,7 @@ button:focus-visible {
     place-items: center;
     min-width: 320px;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
   }
 
   h1 {
